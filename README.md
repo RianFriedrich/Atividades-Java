@@ -55,19 +55,4 @@ java -p bin -m projeto/app.MainGUI
 ```powershell
 java -p bin -m projeto/exercicio2.Principal
 ```
-
-**Notas sobre comportamento e sugestões**
-- O método `Produto.calcularPrecoFinal(double preco1, double preco2, double desconto)` na versão original usa `preco1 + preco2 / desconto`. Isso pode não corresponder à intenção de "desconto". A GUI pede ao usuário o tipo de desconto (percentual ou absoluto) e realiza o cálculo adequadamente. Se preferir, posso alterar a implementação do método para lidar com descontos internamente.
-- A classe `Geerente` está escrita com dois `e` ("Geerente"). Se desejar, posso renomeá-la para `Gerente` e atualizar todas as referências.
-- As interfaces adicionadas (`IFormaGeometrica`, `IFuncionario`, `ICasa`, `IProduto`) têm assinaturas básicas — podemos expandi-las para incluir todas as sobrecargas se quiser seguir esse design.
-
-**Como contribuir / alterar**
-- Faça um branch, modifique os arquivos em `src/` e abra um pull request.
-
-**Problemas comuns**
-- Se der erro `module not found` ou `class not found`, verifique se o diretório `bin` contém os `.class` gerados e se você está executando `java -p bin -m projeto/...` na raiz `projeto`.
-- Se a GUI não abrir, verifique se o JDK instalado inclui suporte a AWT/Swing (disponível nas distribuições JDK padrão) e se não há problemas de permissões gráficos no ambiente remoto.
-
 ---
-
-Se quiser que eu faça alterações (ex.: renomear `Geerente` para `Gerente`, ajustar `Produto` para cálculo percentual por padrão, ou adicionar testes), diga qual opção prefere e eu aplico as mudanças.
