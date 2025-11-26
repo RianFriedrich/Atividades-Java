@@ -1,0 +1,15 @@
+# Compiled classes
+**/*.class
+
+# Build output
+projeto/bin/
+
+# Eclipse project files
+.project
+
+# IDE folders
+.idea/
+.vscode/
+
+# Mac files
+.DS_Store
